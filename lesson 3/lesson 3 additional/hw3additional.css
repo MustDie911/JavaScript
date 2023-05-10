@@ -1,0 +1,30 @@
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.post-card {
+    width: 17%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.users-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.user-block{
+    text-align: center;
+    width: 40%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+

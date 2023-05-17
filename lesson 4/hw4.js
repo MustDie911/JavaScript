@@ -1,41 +1,39 @@
 // - створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
 
 // function calc(a, b) {
-//     let area = a * b;
-//     return area
+//     return a * b
 // }
 //
-// let res = calc(3, 6);
-// console.log(res)
+// let s = calc(2,4);
+// console.log(s)
 
 // - створити функцію яка обчислює та повертає площу кола з радіусом r
 
 // function calc(r) {
-//     let area = Math.PI*(r**2);
-//     return area;
+//     return Math.PI * r ** 2;
 // }
 //
-// let res = calc(4);
-// console.log(res)
+// let s = calc(2);
+// console.log(s)
 
 // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
 
-// function calc(r,h) {
-//     let area = 2*Math.PI*r*h;
-//     return area;
+// function calc(r, h) {
+//     return Math.PI * r * h;
 // }
-// let res = calc(2,4);
-// console.log(res);
+// let s = calc(1,1);
+// console.log(s)
 
 // - створити функцію яка приймає масив та виводить кожен його елемент
 
 // function arrPrinter(arr) {
 //     for (let i = 0; i < arr.length; i++) {
-//         console.log(arr[i])
+//         const arrElement = arr[i];
+//         console.log(arrElement);
 //     }
 // }
 //
-// let arr = [1,2,3,4,5]
+// let arr = [1, 2, 3, 4, 5];
 // arrPrinter(arr)
 
 // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
@@ -47,119 +45,120 @@
 
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
 
-// function ulPrinter(textUl) {
-//     document.write(`<ul>`)
-//     document.write(`<li>${textUl}</li>`)
-//     document.write(`<li>${textUl}</li>`)
-//     document.write(`<li>${textUl}</li>`)
-//     document.write(`</ul>`)
+// function liPrinter(li) {
+//     document.write(`<li>${li}</li>`)
 // }
-// ulPrinter('hello')
+// liPrinter("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam cupiditate dolor dolores doloribus ducimus explicabo fugit id incidunt nam necessitatibus ratione sit soluta, totam voluptates voluptatum! Ipsum neque nobis sed!")
 
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
 
-// function ulPrinter(text, count) {
-//     let ul = '<ul>';
-//     for (let i = 0; i < count; i++) {
-//         ul = ul + '<li>' + text + '</li>';
+// function liPrinter(txt, num) {
+//     document.write(`<ul>`)
+//     for (let i = 0; i < num; i++) {
+//         document.write(`<li>${txt}</li>`)
 //     }
-//     ul = ul + '</ul>';
-//     return ul;
+//     document.write(`</ul>`)
 // }
-//
-// document.write(ulPrinter('someText', 100))
+// liPrinter('lorem',3)
 
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
 
-// function arrPrinter(arr) {
+// function arrList(arr) {
+//     document.write(`<ul>`)
 //     for (let i = 0; i < arr.length; i++) {
-//         document.write(`<ul>`)
 //         document.write(`<li>${arr[i]}</li>`)
-//         document.write(`</ul>`)
 //     }
-// }
+//     document.write(`</ul>`)
 //
-// let arr = [1,2,3,4,true,'123']
-// arrPrinter(arr)
+// }
+// let arr = [1,'2',true]
+// arrList(arr)
 
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
 
-// function userList(arr) {
-//     for (const user of arr) {
-//         document.write(`<div>${user.id},${user.name},${user.age}</div>`)
+// let array =
+//     [{id: 1, name: 'Thomas', age: 22}]
+//
+// function arrList(arr) {
+//     for (const arrElement of arr) {
+//         document.write(`<div>${arrElement.id} ${arrElement.name} ${arrElement.age}</div>`)
 //     }
 // }
-//
-// let users = [
-//     {id: 1, name: 'asd', age: 22},
-//     {id: 2, name: 'qwe', age: 23},
-//     {id: 3, name: 'zxc', age: 24}
-// ]
-// userList(users)
+// arrList(array)
 
 // - створити функцію яка повертає найменьше число з масиву
 
-// function findSmallestNumber(numbers) {
-//     let smallestNumber = numbers[0];
-//
-//     for (let i = 1; i < numbers.length; i++) {
-//         if (numbers[i] < smallestNumber) {
-//             smallestNumber = numbers[i];
+// function numChecker(array) {
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i] < array[0]) {
+//             array[0] = array[i]
 //         }
+//
 //     }
-//
-//     return smallestNumber;
+//     return console.log(array[0])
 // }
-// const numbers = [10, 5, 3, 8, 2];
-//
-// let smallestNumber = findSmallestNumber(numbers);
-// console.log(smallestNumber);
+// let arr = [9,1,2,3,4]
+// numChecker(arr)
 
 // - створити функцію sum(arr)яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад sum([1,2,10]) //->13
 
-// function sum(arr) {
-//     let result = 0;
-//
-//     for (let i = 0; i < arr.length; i++) {
-//         result += arr[i];
+// function sumArr(arr) {
+//     let res = 0;
+//     for (const arrElement of arr) {
+//         res = res + arrElement
 //     }
-//
-//     return result;
+//     return res
 // }
 //
-// const arr = [1, 2, 10];
-// console.log(sum(arr));
+// console.log(sumArr([1, 2, 10]));
 
 // - створити функцію swap(arr,index1,index2). Функція міняє місцями заняення у відаовідних індексах
 // Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
 
-// function swap(arr, index1, index2) {
-//     let temp = arr[index1];
-//     arr[index1] = arr[index2];
-//     arr[index2] = temp;
-//     return arr;
-// }
-//
-// let arr = [11, 22, 33, 44];
-// console.log(swap(arr, 0, 1));
+function swap(arr, index1, index2) {
+    let temp = arr[index1];
+    arr[index1] = arr[index2];
+    arr[index2] = temp;
+    return arr;
+}
+
+let arr = [11, 22, 33, 44];
+console.log(swap(arr, 0, 1));
 
 
 // - Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
 // Приклад exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD') // => 250
 
 // function exchange(sumUAH, currencyValues, exchangeCurrency) {
-//     let exchangeRate = 1;
-//     for (let i = 0; i < currencyValues.length; i++) {
-//         if (currencyValues[i].currency === exchangeCurrency) {
-//             exchangeRate = currencyValues[i].value;
-//             break;
+//     for (const item of currencyValues) {
+//         if (item.currency === exchangeCurrency) {
+//            return  sumUAH / item.value
 //         }
 //     }
-//     return sumUAH / exchangeRate;
 // }
 //
-// let sumUAH = 10000;
-// let currencyValues = [{ currency: 'USD', value: 40 }, { currency: 'EUR', value: 42 }];
-// let exchangeCurrency = 'USD';
-// console.log(exchange(sumUAH, currencyValues, exchangeCurrency)); // 250
+// let exchange1 = exchange(10000, [{currency: 'USD', value: 40}, {currency: 'EUR', value: 42}], 'USD');
+// console.log(exchange1)
 
+
+// function userBuilder(name, age) {
+//     let user = {
+//         name: name,
+//         age: age
+//     }
+//     return {
+//             getInfo: function () {
+//                 return `name ${user.name} age - ${user.age}`
+//             },
+//             setAge: function (age) {
+//                 if (age > user.age) {
+//                     user.age = age
+//                 }
+//             },
+//         }
+// }
+// let manipulator = userBuilder('Thomas',22);
+// console.log(manipulator.getInfo())
+//
+// manipulator.setAge(23);
+// console.log(manipulator.getInfo())

@@ -6,7 +6,7 @@
 
 // - створити функцію яка обчислює та повертає площу кола з радіусом r
 
-// let s = (r)=>Math.PI*r**2;
+// let s = r => Math.PI * r ** 2;
 // console.log(s(2));
 
 // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
@@ -16,7 +16,7 @@
 
 // - створити функцію яка приймає масив та виводить кожен його елемент
 
-// let iterator = (arr)=>{
+// let iterator = arr =>{
 //     for (let i = 0; i < arr.length; i++) {
 //         const arrElement = arr[i];
 //         console.log(arrElement)
@@ -28,7 +28,7 @@
 
 // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
 
-// let pPrinter = (pTxt) => {
+// let pPrinter = pTxt => {
 //     document.write(`<p>${pTxt}</p>`)
 // }
 //
@@ -37,7 +37,7 @@
 
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
 
-// let liPrinter = (li) =>{
+// let liPrinter = li =>{
 //     document.write(`<ul>`)
 //     document.write(`<li>${li}</li>`)
 //     document.write(`<li>${li}</li>`)
@@ -65,7 +65,7 @@
 
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
 
-// let arrList = (arr) => {
+// let arrList = arr => {
 //     document.write(`<ul>`)
 //     for (const arrElement of arr) {
 //         document.write(`<li>${arrElement}</li>`)
@@ -78,7 +78,7 @@
 
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
 
-// let iterator = (arr) => {
+// let iterator = arr => {
 //     for (let i = 0; i < arr.length; i++) {
 //         const arrElement = arr[i];
 //         document.write(`<div>${arrElement.id}.${arrElement.name}, age: ${arrElement.age} </div>`)
@@ -94,7 +94,7 @@
 
 // - створити функцію яка повертає найменьше число з масиву
 
-// let calc = (num) => {
+// let calc = num => {
 //     for (let i = 0; i < num.length; i++) {
 //         if (num[0] < num[1] && num[0] < num[2]) {
 //             console.log(num[0])
@@ -110,7 +110,7 @@
 
 //---------------------------or-----------------------------
 
-// let numChecker = (arr) => {
+// let numChecker = arr => {
 //     for (let i = 0; i < arr.length; i++) {
 //         if (arr[i] < arr[0]) {
 //             arr[0] = arr[i]
@@ -124,7 +124,7 @@
 
 // - створити функцію sum(arr)яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад sum([1,2,10]) //->13
 
-// let sum = (arr) => {
+// let sum = arr => {
 //     let test = 0;
 //     for (const arrElement of arr) {
 //         test = test + arrElement

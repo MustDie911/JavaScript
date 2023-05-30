@@ -1,0 +1,44 @@
+
+*{
+    font-size: 25px;
+}
+.testFull {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.title {
+    border: cornflowerblue solid 3px;
+    width: 100%;
+    text-align: center
+}
+
+.duration {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+.monthDuration{
+    width: 50%;
+    border: red solid 3px;
+    text-align: center
+}
+.hourDuration{
+    width: 50%;
+    border: cornflowerblue solid 3px;
+    text-align: center
+}
+.ulListOfModules{
+    width: 100%;
+
+}
+.li{
+    margin-top: 15px;
+    border: green solid 3px;
+
+}
+

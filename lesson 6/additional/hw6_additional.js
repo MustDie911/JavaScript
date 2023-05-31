@@ -22,7 +22,7 @@
 // }
 //
 // let str ='Каждый охотник желает знать';
-// console.log(delete_characters(str, 6)); // 'Каждый'
+// console.log(delete_characters(str,  7));
 
 
 // - Напишіть функцію insert_dash(str), яка приймає рядок str як аргумент і вставляє тире (-) між словами.
@@ -233,52 +233,52 @@
 
 // -стоврити масив книжок (назва, кількість сторінок, автори , жанри).
 
-let books = [
-    {
-        title: "To Kill a Mockingbird",
-        pages: 281,
-        authors: ["Harper Lee"],
-        genres: ["Southern Gothic", "bildungsroman", "test", "test2"],
-    },
-    {
-        title: "1984",
-        pages: 328,
-        authors: ["George Orwell"],
-        genres: ["Dystopian", "Political fiction"],
-    },
-    {
-        title: "Animal Farm",
-        pages: 112,
-        authors: ["George Orwell", "test"],
-        genres: ["Political satire"],
-    },
-    {
-        title: "Brave New World",
-        pages: 311,
-        authors: ["Aldous Huxley"],
-        genres: ["Dystopian", "Science fiction"],
-    },
-    {
-        title: "Fahrenheit 451",
-        pages: 158,
-        authors: ["Ray Bradbury"],
-        genres: ["Dystopian", "Science fiction"],
-    }
-];
-
-// -знайти наібльшу книжку.
-console.log(books.sort((a, b) => b.pages - a.pages)[0])
-// - знайти книжку/ки з найбільшою кількістю жанрів
-
-console.log(books.sort((a, b) => b.genres.length - a.genres.length)[0])
-
-// - знайти книжку/ки з найдовшою назвою
-console.log(books.sort((a, b) => b.title.trim().length - a.title.trim().length)[0])
-// - знайти книжку/ки які писали 2 автори
-console.log(books.filter(x => x.authors.length === 2))
-
-// - знайти книжку/ки які писав 1 автор
-console.log(books.filter(x => x.authors.length === 1))
-
-// - вісортувати книжки по кількості сторінок по зростанню
-console.log(books.sort((a, b) => a.pages - b.pages))
+// let books = [
+//     {
+//         title: "To Kill a Mockingbird",
+//         pages: 281,
+//         authors: ["Harper Lee"],
+//         genres: ["Southern Gothic", "bildungsroman", "test", "test2"],
+//     },
+//     {
+//         title: "1984",
+//         pages: 328,
+//         authors: ["George Orwell"],
+//         genres: ["Dystopian", "Political fiction"],
+//     },
+//     {
+//         title: "Animal Farm",
+//         pages: 112,
+//         authors: ["George Orwell", "test"],
+//         genres: ["Political satire"],
+//     },
+//     {
+//         title: "Brave New World",
+//         pages: 311,
+//         authors: ["Aldous Huxley"],
+//         genres: ["Dystopian", "Science fiction"],
+//     },
+//     {
+//         title: "Fahrenheit 451",
+//         pages: 158,
+//         authors: ["Ray Bradbury"],
+//         genres: ["Dystopian", "Science fiction"],
+//     }
+// ];
+//
+// // -знайти наібльшу книжку.
+// console.log(books.sort((a, b) => b.pages - a.pages)[0])
+// // - знайти книжку/ки з найбільшою кількістю жанрів
+//
+// console.log(books.sort((a, b) => b.genres.length - a.genres.length)[0])
+//
+// // - знайти книжку/ки з найдовшою назвою
+// console.log(books.sort((a, b) => b.title.trim().length - a.title.trim().length)[0])
+// // - знайти книжку/ки які писали 2 автори
+// console.log(books.filter(x => x.authors.length === 2))
+//
+// // - знайти книжку/ки які писав 1 автор
+// console.log(books.filter(x => x.authors.length === 1))
+//
+// // - вісортувати книжки по кількості сторінок по зростанню
+// console.log(books.sort((a, b) => a.pages - b.pages))

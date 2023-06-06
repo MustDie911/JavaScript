@@ -85,19 +85,54 @@
 //- створити інпут який приймає вік людини та кнопку яка підтверджує дію.
 // При натисканні на кнопку зчитати інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
 
-let ageChecker = document.forms.ageChecker;
-ageChecker.onsubmit = function (e) {
-    e.preventDefault();
-    if (+this.age.value < 18) {
-        return alert('Ваш вік менше 18')
-    }
-}
+// let ageChecker = document.forms.ageChecker;
+// ageChecker.onsubmit = function (e) {
+//     e.preventDefault();
+//     if (+this.age.value < 18) {
+//         return alert('Ваш вік менше 18')
+//     }
+// }
 
 // *** Створити 3 інпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
 //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
 
+// const formTable = document.form
+// formTable.onsubmit = function (event) {
+//     event.preventDefault()
+//     let rows = document.form.row.value
+//     let cols = document.form.place.value
+//     let content = document.form.content.value
+//     let table = document.createElement('table')
+//     for (let i = 0; i < rows; i++) {
+//         let tr = document.createElement('tr')
+//         for (let j = 0; j < cols; j++) {
+//             let td = document.createElement('td')
+//             td.innerText = content
+//             tr.appendChild(td)
+//         }
+//         table.appendChild(tr)
+//     }
+//     document.body.appendChild(table)
+// }
 
 // *** (подібне було вище, але...будьте уважні в другій частині) створити сторінку з довільним блоком, в середині якого є значення "100грн"
 // при перезавантаженні сторінки до значаення додається по 10грн, але !!!
 //     зміна ціни відбувається тільки на перезавантаження, які відбулись пізніше ніж 10 секунд після попереднього.
 //     При перезавантаженні, яке відбулось раніше ніж минуло 10 секунд - нічого не відбувається
+
+// const money = document.getElementById('money')
+// let arrTime = localStorage.getItem('moneys') || []
+// arrTime = JSON.parse(arrTime)
+// if (arrTime) {
+//     let date = new Date().getTime()
+//     let price = arrTime[arrTime.length - 1].price
+//     if (date - arrTime[arrTime.length - 1].date > 10000) {
+//         price += 10
+//         arrTime.push({ date: date, price: price })
+//     }
+// } else {
+//     arrTime = [{ date: new Date().getTime(), price: 100 }]
+// }
+// money.innerText = arrTime[arrTime.length - 1].price
+// arrTime = JSON.stringify(arrTime)
+// localStorage.setItem('moneys', arrTime)

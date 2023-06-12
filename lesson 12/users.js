@@ -11,7 +11,7 @@ fetch('http://jsonplaceholder.typicode.com/users')
             let listItem = document.createElement('li');
             let link = document.createElement('a');
             link.href = `user-details.html?id=${user.id}`;
-            link.textContent = `${user.id} - ${user.name}`;
+            link.innerText = `${user.id} - ${user.name}`;
             listItem.appendChild(link);
             userList.appendChild(listItem);
         })

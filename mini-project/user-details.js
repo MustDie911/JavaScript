@@ -17,9 +17,14 @@ function UserDetails() {
 <p>Website: ${user.website}</p>
 <p>Company: ${user.company.name}, <i>${user.company.catchPhrase}</i>, <i><strong>${user.company.bs}</strong></i></p>
 
-<button class="show_post_btn" onclick="UserPosts(${user.id})">Post of current <user></user></button>`
+<button class="show_post_btn" id="postButton">Post of current user</button>`
 
+            let postButton = document.getElementById('postButton');
+            postButton.addEventListener('click', () => {
+                UserPosts(userId);
+            },{ once: true });
         })
+
         .catch(error => console.error('error:', error));
 }
 
